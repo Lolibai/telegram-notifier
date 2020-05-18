@@ -1,0 +1,16 @@
+name: 'Telegram Notification'
+description: 'Notify Telegram Chat'
+inputs:
+  botId:  # id of telegram bot
+    description: 'Telegram bot id'
+    required: true
+  chatId: # id of telegram chat
+    description: 'Telegram chat id'
+    required: true
+  message: # message to Telegram
+    description: 'Telegram message'
+    required: true
+    default: 'TelegramActionDefault'
+runs:
+  using: 'node12'
+  main: 'index.js'
